@@ -13,11 +13,11 @@ def test_get_operations_list(coll):
 
 
 def test_sort_executed_list_per_date():
-    assert sort_executed_list_per_date(executed_operations) == sorted(sort_executed_list, key=lambda x: x.get("date"), reverse=True)
+    assert sort_executed_list_per_date([{"date": 12}, {"date": 22}]) == [{"date": 22}, {"date": 12}]
 
 
 def test_get_executed_operations():
-    assert get_executed_operations(operations) == executed_operations
+    assert get_executed_operations([{"state": "EXECUTED"}, {"state": "CANCELED"}]) == [{"state": "EXECUTED"}]
 
 
 def test_get_first_5_operation():
