@@ -3,7 +3,7 @@ from utils.functions import get_operations_list, get_executed_operations, sort_e
 from src.main import operations, executed_operations, sort_executed_list, first_5_operations, print_executed_operation
 
 
-@pytest.fixture
+@pytest.fixture 
 def coll():
     return "C:/Users\TTe4e\py_project\kursovaya3\src\operations.json"
 
