@@ -5,3 +5,4 @@ executed_operations = get_executed_operations(operations)
 sort_executed_list = sort_executed_list_per_date(executed_operations)
 first_5_operations = get_first_5_operation(sort_executed_list)
 print_executed_operation(first_5_operations)
+ 
